@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Excellence | Premium Academic Coaching</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "on-surface-variant": "#43474e",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-fixed-dim": "#c2c7cc",
+                    "primary-fixed": "#d6e3ff",
+                    "secondary-fixed-dim": "#ffb866",
+                    "tertiary": "#1c2225",
+                    "surface": "#f9f9ff",
+                    "secondary-container": "#ffb55c",
+                    "inverse-surface": "#273141",
+                    "surface-dim": "#d0daf0",
+                    "surface-container-low": "#f0f3ff",
+                    "primary-fixed-dim": "#adc7f7",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#dee3e8",
+                    "background": "#f9f9ff",
+                    "on-tertiary-container": "#9aa0a4",
+                    "on-primary-container": "#86a0cd",
+                    "secondary-fixed": "#ffddba",
+                    "surface-container-high": "#dee8ff",
+                    "secondary": "#875200",
+                    "surface-container": "#e7eeff",
+                    "on-secondary-fixed": "#2b1700",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#001b3c",
+                    "on-secondary-fixed-variant": "#673d00",
+                    "on-background": "#121c2c",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#d9e3f9",
+                    "on-surface": "#121c2c",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6cf",
+                    "on-tertiary-fixed": "#171c20",
+                    "tertiary-container": "#31373b",
+                    "primary-container": "#1a365d",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "on-secondary-container": "#744600",
+                    "surface-container-highest": "#d9e3f9",
+                    "primary": "#002045",
+                    "inverse-primary": "#adc7f7",
+                    "outline": "#74777f",
+                    "surface-tint": "#455f88",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-bold": ["Inter"],
+                    "display-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .testimonial-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .program-card:hover {
+            box-shadow: 0 20px 40px rgba(26, 54, 93, 0.08);
+            transform: translateY(-4px);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Navigation -->
+<header class="bg-surface-container-lowest fixed top-0 left-0 right-0 z-50 shadow-sm">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-sm">
+<img alt="Excellence Logo" class="h-10 w-auto" src="data:image/png;base64,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"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Excellence</span>
+</div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="Home.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website%20(2)/About.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website/Services.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website%20(1)/Contact.html">Contact</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-md py-sm rounded font-label-bold text-label-bold transition-all hover:bg-on-secondary-fixed-variant">
+                Enroll Now
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="absolute top-[-10%] right-[-10%] w-[60%] h-[120%] bg-surface-container-high rounded-full blur-[120px] opacity-40"></div>
+<div class="absolute bottom-[-20%] left-[-5%] w-[40%] h-[80%] bg-secondary-fixed rounded-full blur-[100px] opacity-30"></div>
+</div>
+<div class="container-max mx-auto px-gutter relative z-10 grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="space-y-md">
+<span class="inline-block px-sm py-xs bg-primary-fixed text-on-primary-fixed rounded-sm font-label-bold text-label-bold">
+                        PREMIUM ACADEMIC COACHING
+                    </span>
+<h1 class="font-display text-display md:text-display leading-tight text-primary">
+                        Unlock Your Academic <br/><span class="italic font-normal text-secondary">Potential</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Empowering students with elite mentorship, personalized curriculum, and a tradition of excellence. Your journey to the top begins here.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-sm pt-sm">
+<button class="bg-primary text-on-primary px-lg py-sm rounded-sm font-label-bold text-label-bold shadow-lg transition-transform hover:-translate-y-1">
+                            Enroll Now
+                        </button>
+<button class="border border-primary text-primary px-lg py-sm rounded-sm font-label-bold text-label-bold hover:bg-primary-container/5 transition-colors">
+                            View Programs
+                        </button>
+</div>
+</div>
+<div class="hidden md:block relative h-[500px]">
+<div class="absolute inset-0 bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transform rotate-2 translate-x-4 translate-y-4"></div>
+<div class="absolute inset-0 rounded-xl overflow-hidden shadow-2xl z-10 border-4 border-white">
+<img class="w-full h-full object-cover" data-alt="A professional, editorial portrait of a focused student in a high-end, modern library setting with soft sunlight filtering through large windows. The student is engaged with a premium leather-bound notebook and a digital tablet. The color palette is dominated by deep navies and warm wood tones, reflecting an atmosphere of prestigious academic rigor and focused mentorship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB07D488FCNHzGDwTy7HcNmvBv8vvMqOsG00uBtajW6TK39xQ0Q4GloyCXnCH212CtMWog_7HktdcOs6O7n7WzwJo_5FMgll6sNquTLuN-d7tEuornJ7mGe3R0qrpNIH8Dp4Ghag7Njqe9AnAYbwMLZP6oZPTJXtYvKx9KcevitWPFpYRpdbb8b7Igk-IUhO9sI85yDVwopwMJxWgTcMxwq7yRo4J0VdCQGFo5UrbVbqeMHflXM0BNzo1MYQaa895YGmTuEGtaq2TIW"/>
+</div>
+<div class="absolute -bottom-base -left-base bg-white p-md shadow-xl rounded-lg z-20 glass-effect border border-outline-variant/30 max-w-[200px]">
+<p class="font-label-bold text-label-bold text-secondary mb-xs">SUCCESS RATE</p>
+<p class="font-headline-lg text-headline-lg text-primary">98%</p>
+<p class="font-caption text-caption text-on-surface-variant">Top-tier college admissions in 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Why Excellence Coaching?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A refined approach to learning that prioritizes individual growth through authoritative guidance and modern methodology.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline-variant/10 shadow-sm flex flex-col items-start space-y-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full mb-xs">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Experienced Tutors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Our mentors are industry leaders and academic veterans with a proven track record of student success.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline-variant/10 shadow-sm flex flex-col items-start space-y-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-fixed text-on-secondary-fixed rounded-full mb-xs">
+<span class="material-symbols-outlined text-3xl">person_search</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Personalized Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">No two students are alike. We craft bespoke learning paths that align with your unique goals and pace.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline-variant/10 shadow-sm flex flex-col items-start space-y-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high text-primary rounded-full mb-xs">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Proven Results</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Year after year, our students consistently achieve top scores and secure placements in world-class institutions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Programs -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-lg">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Academic Programs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive coaching solutions designed to bridge the gap between classroom theory and real-world mastery.</p>
+</div>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-xs border-b border-primary group" href="#">
+                        Explore all programs 
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- High School -->
+<div class="program-card bg-white rounded-lg overflow-hidden flex flex-col h-full transition-all duration-300">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of high school students collaborating on a complex scientific project in a bright, modern laboratory. The focus is on their determined expressions and shared teamwork. The lighting is crisp and natural, highlighting a sophisticated learning environment with clean surfaces and advanced equipment. Modern corporate educational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD76kJKjHFszt6hQNrr4mPlb_GMW2aXWknSIiLVjXrHV5aoL4380kf-s41OIZCZrXH2UixfKtD6biBnRTZPrA3UOH19jMLx-AHJ02x9jrJVf_uQXtDU1pWJE1iYtG2LiKDeGRVDQkXZzkxeAiVRP8DhMT1sTy5iKxo0VEoJX17zur5UC2gjTDd8YPifQUKDEuZvfzohNvdTdlDzMqqfwUeOTIxaVq1yMcsUTqMZbZh4yYbabiT6a7MrAa7k31IBWFGVk_iUE1tGGI-C"/>
+<div class="absolute top-md left-md">
+<span class="bg-white/90 px-sm py-xs rounded-sm text-secondary font-label-bold text-label-bold">K-12 ELITE</span>
+</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">High School Mastery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Advanced curricula coverage for Math, Science, and Humanities with a focus on internal GPA excellence.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-xs">
+                                Learn More <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- College Entrance -->
+<div class="program-card bg-white rounded-lg overflow-hidden flex flex-col h-full transition-all duration-300">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist and high-contrast shot of study materials, including a fountain pen, a classical literature book, and a high-end laptop on a white marble desk. The aesthetic is extremely clean and organized, representing clarity of thought and preparation for college entrance exams. Soft morning shadows create a peaceful yet ambitious mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNsZHuDFN6yft_k6rifyur2pVqar7EjklppA_VGMLI-i1Fq_or_5VcDjf1Jw65qQz2z1uF-2p11pooYHzedTr-Tk97vHUXdM48_5tSGf_dgcYasULtoxr3tF36j-G1pyOx-xKqifl_NzMmjy5OlvGCVf5hRZmE3us6tVJYAbTdo-p_zphKJALWt7hj5sazCtJmK40UwjiJkClCZr7_2N0gIEI7_mNwlxyuZJUekQazrxVVHgH0hD-lq949lYOkBMLN_KpEW-OPg8A2"/>
+<div class="absolute top-md left-md">
+<span class="bg-white/90 px-sm py-xs rounded-sm text-secondary font-label-bold text-label-bold">PREP SERIES</span>
+</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">College Entrance Prep</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Strategic preparation for SAT, ACT, and IELTS with mock exams and personalized performance analysis.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-xs">
+                                Learn More <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Competitive Exams -->
+<div class="program-card bg-white rounded-lg overflow-hidden flex flex-col h-full transition-all duration-300">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An atmospheric, editorial wide shot of a lecture hall with a modern architectural design, focusing on a single light illuminating a workspace. The scene conveys a sense of high-stakes academic preparation and prestigious achievement. The color palette is rich with deep navy and subtle gold accents, creating an authoritative corporate educational look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxHE5TJ9WxulFZqc7MoJTPpzXbPMt9DkvjkAsRPPe5twNSXB_uGajTz7xu4qQMDtvUQ6bpwVwFIhmmxOr6CVt_ty28N0OlFtptLvjDyQ7LQra7FDY4W4OfcGo-ILKoZZ9o7f6AOFtqkmEttPaxNH4NkkBPaqlL67rdaYzaIecSF8oFlUjwEAXRkhpgfj5QqqTMZN1jW9FUW2FFCJ-qDbD2fM7XWh0Ne1e2pM8Et0SMEn0e9zu5hEgvKLvnuzpZ7uI9eB2c_M9aP6FW"/>
+<div class="absolute top-md left-md">
+<span class="bg-white/90 px-sm py-xs rounded-sm text-secondary font-label-bold text-label-bold">ADVANCED TIER</span>
+</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Competitive Exams</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Intensive coaching for national level competitive examinations and scholarship interviews.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-xs">
+                                Learn More <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-xl bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<span class="font-label-bold text-label-bold text-secondary mb-sm inline-block">SUCCESS STORIES</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">What Our Students Accomplish</h2>
+<div class="relative min-h-[300px]" id="testimonial-container">
+<!-- Carousel Content -->
+<div class="testimonial-card block">
+<span class="material-symbols-outlined text-[64px] text-secondary-fixed mb-sm" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-display italic text-headline-md text-primary mb-lg leading-relaxed">
+                                    "The mentorship at Excellence didn't just help me pass exams; it completely changed how I approach learning. The personalized attention was the key to my IVY League acceptance."
+                                </p>
+<div class="flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a young woman with a confident, friendly smile, dressed in a smart navy blazer. The background is a blurred high-end campus environment. The photo has an editorial quality with clean lighting, emphasizing her success and professional growth after her time at Excellence center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-fkPfVuymC7oOs6JI9csYxZM0OtbhMXIydXuLRG3ELlMgysDPPqXnt-wX5LWvuG_4EiB5mhVnxoynBWx_0Wn4eeJvVOa7GIe-6JE7x23iAtvPbzNdeGv3MJkdDRH83IMWd-VXomlLNbm13b-_Dr--3zG0kDgZfXEmI6JGxvKGXH7NEtAjVYD4Z7kVnBECcgYgXD3_VetHV3tUInp0CQIs0-iHC7MfxRI9R-pVPlE9XNRmqm1DDeCCPe7Humng5YbWqH5ejED-b7j"/>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary">Alexandra Vance</p>
+<p class="font-caption text-caption text-on-surface-variant">Harvard University Class of '27</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex gap-sm mt-lg">
+<button class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary-container/5 transition-colors" onclick="prevTestimonial()">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary-container/5 transition-colors" onclick="nextTestimonial()">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-secondary-fixed rounded-xl -rotate-3"></div>
+<div class="relative bg-surface p-base rounded-lg shadow-2xl">
+<img class="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition-all duration-700" data-alt="A group of diverse, smiling students celebrating their graduation on a beautiful, traditional university campus. They are wearing navy caps and gowns with gold tassels. The image captures a moment of pure joy and accomplishment. Soft, golden hour sunlight bathes the scene, creating an inspiring and warm aesthetic that feels prestigious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqZi8kDXdVE9QCztKncewtZi98YnoUxvz3Zo_z1XeHbf6DDRk8Bx1wcnKO3UNoRnrMVPjM-6gfrUQ_QRzxl46spN4IW6ZzKAd7ahfThXQGC-Vd_xiF7C_Vte-du-O3LJz3bLsyDXseAEDlyVQ4G5HE5PZME0Lbx4wSaVLJA-Z1oUpZgICapXweR1FTpBNfuSoVIwmjhW2DGdSxkpTu-qGW-AyXhP9dJohFbLmXgQP9-OUXqdjC-kPd1quuPO2OBGWYV4XR8zm0SL8b"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-display text-display mb-sm">Ready to elevate your future?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto mb-lg opacity-80">Join a community of high-achievers and start your journey towards academic excellence today.</p>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<button class="bg-secondary text-on-secondary px-lg py-sm rounded font-label-bold text-label-bold shadow-lg hover:scale-105 transition-transform">
+                        Start Enrollment
+                    </button>
+<button class="border border-primary-fixed text-primary-fixed px-lg py-sm rounded font-label-bold text-label-bold hover:bg-white/10 transition-colors">
+                        Book a Consultation
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-tertiary-fixed-variant">
+<div class="w-full py-xl px-gutter max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="space-y-sm">
+<div class="flex items-center gap-xs mb-sm">
+<img alt="Excellence Logo" class="h-8 w-auto" src="data:image/png;base64,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"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Excellence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">The premier choice for academic mentoring and strategic coaching for the next generation of leaders.</p>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-sm">Programs</h4>
+<ul class="space-y-xs">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">High School Mastery</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Entrance Exams</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Competitive Tiers</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Summer Intensives</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-sm">Company</h4>
+<ul class="space-y-xs">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Our Tutors</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-sm">Connect</h4>
+<div class="flex gap-sm">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">call</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">distance</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Excellence Coaching Center. All rights reserved.</p>
+<div class="flex gap-md">
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-primary" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+<script>
+        const testimonials = [
+            {
+                quote: "The mentorship at Excellence didn't just help me pass exams; it completely changed how I approach learning. The personalized attention was the key to my IVY League acceptance.",
+                author: "Alexandra Vance",
+                info: "Harvard University Class of '27",
+                img: "placeholder"
+            },
+            {
+                quote: "I was struggling with Advanced Physics until I joined Excellence. My tutor broke down complex theories into manageable concepts. I scored top of my class thanks to their guidance.",
+                author: "Jameson Miller",
+                info: "MIT Engineering Aspirant",
+                img: "placeholder"
+            }
+        ];
+
+        let currentTestimonial = 0;
+        const container = document.getElementById('testimonial-container');
+
+        function renderTestimonial(index) {
+            const t = testimonials[index];
+            container.style.opacity = 0;
+            setTimeout(() => {
+                container.innerHTML = `
+                    <div class="testimonial-card block">
+                        <span class="material-symbols-outlined text-[64px] text-secondary-fixed mb-sm" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                        <p class="font-display italic text-headline-md text-primary mb-lg leading-relaxed">
+                            "${t.quote}"
+                        </p>
+                        <div class="flex items-center gap-sm">
+                            <div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+                                <img src="${t.img}" data-alt="A portrait of a student, capturing their success and confidence. Professional and clean aesthetic." class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-label-bold text-label-bold text-primary">${t.author}</p>
+                                <p class="font-caption text-caption text-on-surface-variant">${t.info}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.style.opacity = 1;
+                container.classList.add('transition-opacity', 'duration-500');
+            }, 300);
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            renderTestimonial(currentTestimonial);
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            renderTestimonial(currentTestimonial);
+        }
+
+        // Add some basic scroll reveal logic
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+    </script>
+</body></html>

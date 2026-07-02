@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services &amp; Resources | Excellence Coaching Center</title>
+<meta content="Explore premium academic coaching and downloadable study resources at Excellence." name="description"/>
+<!-- Google Fonts: Playfair Display for headers, Inter for body -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "on-surface-variant": "#43474e",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-fixed-dim": "#c2c7cc",
+                    "primary-fixed": "#d6e3ff",
+                    "secondary-fixed-dim": "#ffb866",
+                    "tertiary": "#1c2225",
+                    "surface": "#f9f9ff",
+                    "secondary-container": "#ffb55c",
+                    "inverse-surface": "#273141",
+                    "surface-dim": "#d0daf0",
+                    "surface-container-low": "#f0f3ff",
+                    "primary-fixed-dim": "#adc7f7",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#dee3e8",
+                    "background": "#f9f9ff",
+                    "on-tertiary-container": "#9aa0a4",
+                    "on-primary-container": "#86a0cd",
+                    "secondary-fixed": "#ffddba",
+                    "surface-container-high": "#dee8ff",
+                    "secondary": "#875200",
+                    "surface-container": "#e7eeff",
+                    "on-secondary-fixed": "#2b1700",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#001b3c",
+                    "on-secondary-fixed-variant": "#673d00",
+                    "on-background": "#121c2c",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#d9e3f9",
+                    "on-surface": "#121c2c",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c6cf",
+                    "on-tertiary-fixed": "#171c20",
+                    "tertiary-container": "#31373b",
+                    "primary-container": "#1a365d",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "on-secondary-container": "#744600",
+                    "surface-container-highest": "#d9e3f9",
+                    "primary": "#002045",
+                    "inverse-primary": "#adc7f7",
+                    "outline": "#74777f",
+                    "surface-tint": "#455f88",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-bold": ["Inter"],
+                    "display-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display": ["Playfair Display"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(26, 54, 93, 0.06);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 8px 30px rgba(26, 54, 93, 0.1);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 z-50 w-full bg-surface-container-lowest shadow-sm h-20 flex items-center transition-all duration-300">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary">Excellence</div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website%20(3)/Home.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website%20(2)/About.html">About</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="Services.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../stitch_excellence_coaching_center_website%20(1)/Contact.html">Contact</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-3 font-label-bold text-label-bold transition-all hover:bg-on-secondary-fixed-variant">
+                Enroll Now
+            </button>
+</div>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative py-xl overflow-hidden bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter relative z-10 flex flex-col md:flex-row items-center gap-xl">
+<div class="md:w-1/2 space-y-md">
+<span class="font-label-bold text-label-bold text-secondary uppercase tracking-widest">Academic Mastery</span>
+<h1 class="font-display text-display md:text-display text-primary">Curated Excellence for Every Student</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Deep-dive coaching sessions paired with high-quality study materials designed to elevate your academic standing and foster lifelong intellectual growth.
+                    </p>
+</div>
+<div class="md:w-1/2 w-full aspect-video rounded-lg overflow-hidden shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="A bright, modern library setting with minimalist wooden desks and high-end lighting. A group of focused students are engaged in collaborative learning using high-quality stationery and sleek laptops. The color palette is dominated by deep navy blues and warm gold accents, creating a prestigious yet welcoming atmosphere of high-level mentorship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8kWqtbGjPTkh4TW4UcKbsugBmiHb4O6WJhEOlAefY5aHRYrsoUvb2_bbW3QPlroFo8j1vwOM9XNT3O1ER33vIxoVnif6E0Z4_-A8nAjWJv08I37oViy4BQgFDfwPLDaKeAhFBCOMFD69wwx3WeamSmsozOjR7LvvMsOLrpUtADWf5Q8f0CwF9lU3i0jbCzlqC3O4Yzfj1HF9y7dVof_vORXShfeAt77KpIQOR3sdNeF_PIz9xkGcphINIXI1AD6C_Sfpvy2iRCLwv"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</section>
+<!-- Coaching Services Section -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Coaching Services</h2>
+<div class="w-20 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Math -->
+<div class="card-shadow bg-surface-container-lowest p-md border border-outline-variant flex flex-col transition-all duration-300">
+<div class="bg-primary-container w-12 h-12 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-primary">calculate</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Mathematics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Advanced calculus, trigonometry, and statistical analysis for competitive entrance exams.</p>
+<ul class="space-y-xs font-label-bold text-label-bold text-primary mb-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Logic &amp; Proofs</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Quantitative Aptitude</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Olympiad Prep</li>
+</ul>
+</div>
+<!-- Science -->
+<div class="card-shadow bg-surface-container-lowest p-md border border-outline-variant flex flex-col transition-all duration-300">
+<div class="bg-primary-container w-12 h-12 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-primary">biotech</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Science</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Conceptual physics, organic chemistry, and molecular biology with a focus on practical application.</p>
+<ul class="space-y-xs font-label-bold text-label-bold text-primary mb-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Laboratory Methods</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Scientific Writing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> STEM Research</li>
+</ul>
+</div>
+<!-- Humanities -->
+<div class="card-shadow bg-surface-container-lowest p-md border border-outline-variant flex flex-col transition-all duration-300">
+<div class="bg-primary-container w-12 h-12 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-primary">history_edu</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Humanities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Critical analysis of global history, sociopolitical structures, and world geography.</p>
+<ul class="space-y-xs font-label-bold text-label-bold text-primary mb-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Ethics &amp; Philosphy</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Policy Debates</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Global Relations</li>
+</ul>
+</div>
+<!-- Language Arts -->
+<div class="card-shadow bg-surface-container-lowest p-md border border-outline-variant flex flex-col transition-all duration-300">
+<div class="bg-primary-container w-12 h-12 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-primary">translate</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Language Arts</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Linguistic mastery, creative writing, and rhetoric for international certifications.</p>
+<ul class="space-y-xs font-label-bold text-label-bold text-primary mb-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Academic ESL</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Public Speaking</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary scale-75">square</span> Literary Theory</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Study Resources & Notes (Bento Grid Style) -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Study Resources &amp; Notes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Exclusive downloadable content curated by our expert educators to reinforce your learning journey.</p>
+</div>
+<button class="font-label-bold text-label-bold text-primary border-b-2 border-secondary flex items-center gap-2 hover:pb-1 transition-all">
+                        Browse Full Library <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Large Primary Category -->
+<div class="md:col-span-2 bg-surface-container-lowest p-lg border border-outline-variant card-shadow flex flex-col md:flex-row gap-lg">
+<div class="md:w-1/2">
+<span class="font-label-bold text-label-bold text-secondary">PREMIUM ARCHIVE</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-sm mb-md">Examination Compendium 2024</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Access the most comprehensive collection of past papers, model answers, and strategy guides for national-level certifications.</p>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-bold text-label-bold flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download PDF Bundle
+                            </button>
+</div>
+<div class="md:w-1/2 aspect-square rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A top-down architectural photograph of organized stationery, thick textbook stacks, and a high-end leather-bound journal. Soft morning sunlight streams across the scene, highlighting textures of paper and ink. The environment is calm and scholarly, utilizing a corporate color scheme of deep navy and ivory white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfPKOc1cBKOXNeKg-ZI67yfQgXk10iGslsd7W5BIA_LGRQcTEXBwbdxdGEnPPHr2s_VsCFx0y8ev_qX2Dh0IvNUjjSxEtT8SIHNtx-YzsE5kVhc58TKNgyCvd6WkrZN0j5CWrnr1PtveLedbSmixEJeeseazCzw2kMji5n74elAU4JrlAUB3XMQVGUo9FQ1ogojRaBHjHF0zOfuuVw95FA_GzHD71e9hqxg9NZDLTW73WTu9RHUxDuf1I56s7gXcGMEkHAUF0-xdto"/>
+</div>
+</div>
+<!-- Smaller Category 1 -->
+<div class="bg-primary-container p-lg text-on-primary card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-md">sticky_note_2</span>
+<h4 class="font-headline-md text-headline-md mb-sm">Subject Handouts</h4>
+<p class="font-caption text-caption opacity-80">Quick-reference cheat sheets for formula-heavy subjects.</p>
+</div>
+<a class="mt-lg font-label-bold text-label-bold text-secondary-container hover:underline" href="#">View 120+ Files</a>
+</div>
+<!-- Smaller Category 2 -->
+<div class="bg-surface-container-lowest p-lg border border-outline-variant card-shadow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-md">play_circle</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-sm">Video Recaps</h4>
+<p class="font-caption text-caption text-on-surface-variant">Archived webinar sessions and conceptual breakdowns.</p>
+</div>
+<a class="mt-lg font-label-bold text-label-bold text-primary hover:text-secondary" href="#">Watch Online</a>
+</div>
+<!-- Smaller Category 3 -->
+<div class="md:col-span-2 bg-surface-container-high p-lg border border-outline-variant card-shadow flex items-center justify-between">
+<div class="max-w-md">
+<h4 class="font-headline-md text-headline-md text-primary mb-sm">Adaptive Quiz Bank</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Practice with 5,000+ interactive questions categorized by difficulty and topic.</p>
+</div>
+<button class="bg-white text-primary border border-primary px-6 py-3 font-label-bold text-label-bold">Access Portal</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Investment in Excellence</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-xl">
+                    We offer tailored coaching packages designed to meet specific academic goals. Our fee structure reflects the high caliber of mentorship and resources provided.
+                </p>
+<div class="max-w-4xl mx-auto bg-surface-container-low p-lg border border-outline-variant shadow-xl flex flex-col md:flex-row items-center gap-lg">
+<div class="text-left flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary">Custom Program Inquiry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm">Fees vary based on subject density, session frequency, and grade level. Connect with our counselors for a personalized quote.</p>
+</div>
+<div class="flex flex-col gap-sm w-full md:w-auto">
+<button class="bg-secondary text-on-secondary px-8 py-4 font-label-bold text-label-bold whitespace-nowrap">Inquire for Fees</button>
+<p class="font-caption text-caption text-on-surface-variant text-center italic">Response within 24 hours</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xl bg-surface-container-high">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Common Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Everything you need to know about starting your journey with us.</p>
+</div>
+<div class="space-y-md">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant overflow-hidden" open="">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+<span class="font-label-bold text-label-bold text-primary">What is the enrollment process?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md border-t border-outline-variant bg-surface-bright">
+                            The process begins with a preliminary assessment of the student's current academic level, followed by a consultation with parents to define goals. Once a program is selected, registration can be completed online or at our center.
+                        </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+<span class="font-label-bold text-label-bold text-primary">Are sessions available online or in-person?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md border-t border-outline-variant bg-surface-bright">
+                            We offer a hybrid model. Students can choose between physical classroom environments at our premium coaching centers or high-fidelity interactive online sessions conducted via our proprietary learning platform.
+                        </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+<span class="font-label-bold text-label-bold text-primary">How do schedules work for busy students?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md border-t border-outline-variant bg-surface-bright">
+                            Our scheduling is highly flexible. We offer early morning, late evening, and weekend batches to accommodate school hours and extracurricular commitments. One-on-one sessions can be custom-scheduled.
+                        </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+<span class="font-label-bold text-label-bold text-primary">Can I access study notes without enrolling?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md border-t border-outline-variant bg-surface-bright">
+                            While our core resources are reserved for enrolled students, we offer a "Resource Pass" subscription for independent learners who wish to access our digital library and quiz banks without attending live sessions.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Testimonial/Quote (Editorial Style) -->
+<section class="py-xl bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<span class="material-symbols-outlined text-secondary text-6xl mb-md" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-display text-headline-lg md:text-display italic mb-lg max-w-4xl mx-auto">
+                    "The depth of the study materials and the precision of the coaching transformed my approach to complex problem-solving."
+                </blockquote>
+<cite class="not-italic font-label-bold text-label-bold text-secondary uppercase tracking-widest">— Julianne Vance, Merit Scholar 2023</cite>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-tertiary-fixed-variant">
+<div class="w-full py-xl px-gutter max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-md">Excellence</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Pioneering premium academic mentorship since 2010. Empowering students through clarity, authority, and rigorous coaching.
+                </p>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-primary mb-md uppercase">Contact</h5>
+<ul class="space-y-sm font-body-md text-body-md text-on-surface-variant">
+<li>1202 Academy Blvd, Education District</li>
+<li>contact@excellence.edu</li>
+<li>+1 (555) 892-0034</li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-primary mb-md uppercase">Resources</h5>
+<nav class="flex flex-col gap-sm">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-secondary transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-secondary transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-secondary transition-all" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline decoration-secondary transition-all" href="#">Cookie Policy</a>
+</nav>
+</div>
+</div>
+<div class="border-t border-outline-variant py-md px-gutter text-center font-caption text-caption text-on-surface-variant">
+            © 2024 Excellence Coaching Center. All rights reserved.
+        </div>
+</footer>
+<script>
+        // Simple micro-interaction for navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.add('shadow-sm');
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Simple reveal animation for services
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-shadow').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body></html>

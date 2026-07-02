@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Excellence Coaching Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed-variant": "#42474c",
+                "on-surface-variant": "#43474e",
+                "surface-bright": "#f9f9ff",
+                "tertiary-fixed-dim": "#c2c7cc",
+                "primary-fixed": "#d6e3ff",
+                "secondary-fixed-dim": "#ffb866",
+                "tertiary": "#1c2225",
+                "surface": "#f9f9ff",
+                "secondary-container": "#ffb55c",
+                "inverse-surface": "#273141",
+                "surface-dim": "#d0daf0",
+                "surface-container-low": "#f0f3ff",
+                "primary-fixed-dim": "#adc7f7",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed": "#dee3e8",
+                "background": "#f9f9ff",
+                "on-tertiary-container": "#9aa0a4",
+                "on-primary-container": "#86a0cd",
+                "secondary-fixed": "#ffddba",
+                "surface-container-high": "#dee8ff",
+                "secondary": "#875200",
+                "surface-container": "#e7eeff",
+                "on-secondary-fixed": "#2b1700",
+                "on-primary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "error": "#ba1a1a",
+                "on-primary-fixed": "#001b3c",
+                "on-secondary-fixed-variant": "#673d00",
+                "on-background": "#121c2c",
+                "error-container": "#ffdad6",
+                "surface-variant": "#d9e3f9",
+                "on-surface": "#121c2c",
+                "on-secondary": "#ffffff",
+                "on-error": "#ffffff",
+                "outline-variant": "#c4c6cf",
+                "on-tertiary-fixed": "#171c20",
+                "tertiary-container": "#31373b",
+                "primary-container": "#1a365d",
+                "inverse-on-surface": "#ebf1ff",
+                "on-primary-fixed-variant": "#2d476f",
+                "on-secondary-container": "#744600",
+                "surface-container-highest": "#d9e3f9",
+                "primary": "#002045",
+                "inverse-primary": "#adc7f7",
+                "outline": "#74777f",
+                "surface-tint": "#455f88",
+                "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "md": "24px",
+                "gutter": "24px",
+                "xs": "4px",
+                "sm": "12px",
+                "xl": "80px",
+                "lg": "48px",
+                "base": "8px",
+                "container-max": "1200px"
+            },
+            "fontFamily": {
+                "label-bold": ["Inter"],
+                "display-mobile": ["Playfair Display"],
+                "body-lg": ["Inter"],
+                "caption": ["Inter"],
+                "headline-lg": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "headline-lg-mobile": ["Playfair Display"],
+                "display": ["Playfair Display"],
+                "body-md": ["Inter"]
+            },
+            "fontSize": {
+                "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "display-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(26, 54, 93, 0.06);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(26, 54, 93, 0.1);
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: #e2e8f0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-sm h-20 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">Excellence</div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../stitch_excellence_coaching_center_website%20(3)/Home.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="About.html">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../stitch_excellence_coaching_center_website/Services.html">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../stitch_excellence_coaching_center_website%20(1)/Contact.html">Contact</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-md py-sm rounded-lg font-label-bold text-label-bold hover:opacity-90 transition-opacity">
+                Enroll Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section with Mission -->
+<header class="relative pt-32 pb-xl overflow-hidden">
+
+<div class="max-w-container-max mx-auto px-gutter relative z-10 grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div>
+<span class="font-label-bold text-label-bold text-secondary uppercase mb-sm block">Our Mission</span>
+<h1 class="font-display text-display mb-md text-primary">Nurturing Intellectual Excellence through Modern Mentorship.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                    At Excellence, we believe education is more than just curriculum; it's about empowering the next generation of leaders with clarity, authority, and the critical thinking skills required to excel in a global landscape.
+                </p>
+<div class="flex gap-md">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-bold text-label-bold">Academic Rigor</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-bold text-label-bold">Holistic Growth</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden card-shadow">
+<img class="w-full h-full object-cover" data-alt="A professional, high-end photograph of a modern educational environment with clean architectural lines and soft sunlight. A library-like setting featuring deep navy bookshelves and gold-accented furniture. The atmosphere is academic, quiet, and prestigious, representing the Excellence coaching center's commitment to quality education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtnef0actmM7_COOVceC-s385hfS6h4_Z49Cy4b7aKVjBp9BoII-BDqhxHdjR4JPgoWGCwVM9J7NdA2zeNb3AdYFiILZ5OKjzBgzkLXrJGGH5H681edl51eMGI-x4OJ0cWIzuhARhVgnUcOh0hhl9Xuqq3EvJONjw211YFe65L9WUMOD2mWgXZxCnjHJLBUD6pgJkXNTCgrIZPEn5xwdnTiVNnQd9m0FpnQ5YHr5S8LtSB7vb80ZkS-vz4C0OLo4mZ0E8oLuQ5El1n"/>
+</div>
+<div class="absolute -bottom-md -left-md bg-primary p-md text-on-primary rounded-lg card-shadow">
+<p class="font-display text-headline-lg">15+</p>
+<p class="font-caption text-caption">Years of Tradition</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Our Journey Timeline -->
+<section class="bg-surface-container-low py-xl">
+<div class="max-w-container-max mx-auto px-gutter text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A legacy of growth, built on the success of our students since 2009.</p>
+</div>
+<div class="max-w-4xl mx-auto px-gutter relative timeline-line">
+<!-- 2009 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl items-center">
+<div class="md:text-right">
+<h3 class="font-headline-md text-headline-md text-primary">2009</h3>
+<p class="font-label-bold text-label-bold text-secondary">The Foundation</p>
+</div>
+<div class="relative pl-lg md:pl-md">
+<div class="absolute left-0 md:-left-[9px] top-2 w-4 h-4 rounded-full bg-secondary border-4 border-surface z-10"></div>
+<div class="bg-surface p-md rounded-xl card-shadow">
+<p class="font-body-md text-body-md">Started with a single classroom and 10 students, focusing on personalized academic mentoring.</p>
+</div>
+</div>
+</div>
+<!-- 2015 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl items-center">
+<div class="md:order-2">
+<h3 class="font-headline-md text-headline-md text-primary">2015</h3>
+<p class="font-label-bold text-label-bold text-secondary">Digital Transformation</p>
+</div>
+<div class="relative pr-lg md:pr-md md:text-right">
+<div class="absolute right-0 md:-right-[9px] top-2 w-4 h-4 rounded-full bg-secondary border-4 border-surface z-10"></div>
+<div class="bg-surface p-md rounded-xl card-shadow">
+<p class="font-body-md text-body-md">Integrated modern learning management systems and expanded our curriculum to competitive entrance exams.</p>
+</div>
+</div>
+</div>
+<!-- 2024 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="md:text-right">
+<h3 class="font-headline-md text-headline-md text-primary">2024</h3>
+<p class="font-label-bold text-label-bold text-secondary">A Modern Era</p>
+</div>
+<div class="relative pl-lg md:pl-md">
+<div class="absolute left-0 md:-left-[9px] top-2 w-4 h-4 rounded-full bg-secondary border-4 border-surface z-10"></div>
+<div class="bg-surface p-md rounded-xl card-shadow">
+<p class="font-body-md text-body-md">Leading the region with 5000+ alumni, a prestigious faculty, and state-of-the-art campus facilities.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Our Expert Faculty -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Meet Our Expert Faculty</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our mentors are more than just teachers; they are scholars and specialists dedicated to unlocking student potential.</p>
+</div>
+<button class="border border-primary text-primary px-lg py-sm rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors">
+                    View All Faculty
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Faculty Card 1 -->
+<div class="bg-surface rounded-xl card-shadow card-hover transition-all overflow-hidden">
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="A portrait of a senior academic professional, a woman in her 40s with a warm, authoritative smile. She is wearing professional attire, set against a blurred background of a sophisticated university study room. The lighting is soft and corporate, aligning with the navy and gold brand colors of Excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3SFEJG-75iEv633Ex5peCFMhEvlhs7c_ZTMN9BcNJCniLU8zJKMEliKMEilCI-xoKxcW8bYR1iq77oKKdU9HNT4vqfSlzeCGrCKVnTrGrhFpz3OFo25GhboNfDtvm4KJnlgPT8A9v5-AyP7-juTKqYlLcdTYinTp6dbLo9Kk3RQHJHF8_1qG97nJlg8SvwOA32LujnUfOdku6SI56c2S_XNazrYqCoZMtiGeawPhAEm0z55PKlGCVWuH4rS440zFfub06JOPnNMuw"/>
+</div>
+<div class="p-md">
+<span class="font-label-bold text-label-bold text-secondary mb-xs block">Mathematics Specialist</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Dr. Elena Vance</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">PhD in Applied Mathematics with 15 years of experience in simplifying complex calculus for advanced learners.</p>
+<div class="flex gap-sm">
+<span class="material-symbols-outlined text-primary-container">school</span>
+<span class="material-symbols-outlined text-primary-container">psychology</span>
+</div>
+</div>
+</div>
+<!-- Faculty Card 2 -->
+<div class="bg-surface rounded-xl card-shadow card-hover transition-all overflow-hidden">
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male educator in his late 30s, looking confident and approachable. He is dressed in a navy blazer over a crisp white shirt. The background is a modern laboratory setting with subtle gold highlights. Professional, high-end editorial photography style reflecting the Excellence brand's authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW6u27md1bOJxG8a_99AteygPaxLMwjq2GVKkInrU5VVBO7s5UOxgu0-hjJZEY_61cYU3nHgpOm8EHrrbmhdjcTLNwId15n7xQKO8GmlmKMJibPqIRqAO44gu34hpK3B5BmHOva0ZiILhmsYYjh7fHn6ARIRyOZguBiz1AwHhbFej4dnHF5oFu3oH3VP9FubNHvhbZSbIeYEjl0L5fkhMZfs7WTcV0vc0CHWg808wp4e7c5fGADvawhH3EXZ8Qzz6KU8LD2Cyf-x4n"/>
+</div>
+<div class="p-md">
+<span class="font-label-bold text-label-bold text-secondary mb-xs block">Physics Expert</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Prof. Julian Grant</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Renowned for his intuitive teaching style in Quantum Mechanics and Electromagnetism for competitive exams.</p>
+<div class="flex gap-sm">
+<span class="material-symbols-outlined text-primary-container">biotech</span>
+<span class="material-symbols-outlined text-primary-container">visibility</span>
+</div>
+</div>
+</div>
+<!-- Faculty Card 3 -->
+<div class="bg-surface rounded-xl card-shadow card-hover transition-all overflow-hidden">
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="A portrait of a female professional with an intellectual and friendly demeanor, late 30s. She is wearing a modern business suit. Background is a bright, white-spaced office with a hint of academic texture like paper stacks or books. High-contrast, clean lighting following the brand's aesthetic of clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqgzBVGrIP9uNYRsYJ0zFRYnuJO0SAAb75huzhRGHvb95X61w6p0cF78bfdeNoALbkFfkyb-dRlq_7ckdrwEtwqw7V-0nxP6Avc0yBr8rIXjaxlJ7tafs5yl86f7HTaHYWjESauQ70glIxGjN3aES_bmMf-5ZSoI5BgGKZ0gJIA3QOa4KqXNGSWTZMHAAT5S2xXx2Pat9nFCFmqPe6e3pbt1unfi4gHNdH3sV2IepYfHv1ZHsm6G-PF-66wi7BqtpVZRWXYDXBfbKt"/>
+</div>
+<div class="p-md">
+<span class="font-label-bold text-label-bold text-secondary mb-xs block">Lead Counselor</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Sarah Montgomery</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Expert in behavioral psychology and student career mapping, providing holistic guidance beyond the classroom.</p>
+<div class="flex gap-sm">
+<span class="material-symbols-outlined text-primary-container">groups</span>
+<span class="material-symbols-outlined text-primary-container">lightbulb</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Teaching Methodology -->
+<section class="bg-primary py-xl text-on-primary overflow-hidden relative">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="order-2 md:order-1">
+<div class="grid grid-cols-2 gap-md">
+<div class="bg-primary-container p-md rounded-xl border border-on-primary-container/20">
+<span class="material-symbols-outlined text-secondary mb-sm" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<h5 class="font-label-bold text-label-bold mb-xs">Diagnostic Assessment</h5>
+<p class="font-caption text-caption opacity-80">Every journey begins with a deep analysis of current student strengths and gaps.</p>
+</div>
+<div class="bg-primary-container p-md rounded-xl border border-on-primary-container/20 mt-md">
+<span class="material-symbols-outlined text-secondary mb-sm" style="font-variation-settings: 'FILL' 1;">model_training</span>
+<h5 class="font-label-bold text-label-bold mb-xs">Precision Coaching</h5>
+<p class="font-caption text-caption opacity-80">Tailored instruction methods that align with individual cognitive processing styles.</p>
+</div>
+<div class="bg-primary-container p-md rounded-xl border border-on-primary-container/20">
+<span class="material-symbols-outlined text-secondary mb-sm" style="font-variation-settings: 'FILL' 1;">speed</span>
+<h5 class="font-label-bold text-label-bold mb-xs">Active Feedback</h5>
+<p class="font-caption text-caption opacity-80">Continuous loop of testing and review to ensure mastery before moving forward.</p>
+</div>
+<div class="bg-primary-container p-md rounded-xl border border-on-primary-container/20 mt-md">
+<span class="material-symbols-outlined text-secondary mb-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<h5 class="font-label-bold text-label-bold mb-xs">Result Orientation</h5>
+<p class="font-caption text-caption opacity-80">Final mile preparation focused on exam temperament and performance optimization.</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label-bold text-label-bold text-secondary uppercase mb-sm block">Our Method</span>
+<h2 class="font-headline-lg text-headline-lg mb-md">The "Precision" Approach to Learning.</h2>
+<p class="font-body-lg text-body-lg mb-lg opacity-90">
+                        We don't just teach subjects; we build systems. Our unique methodology combines traditional rigor with data-driven insights to create a learning environment where excellence is inevitable.
+                    </p>
+<div class="bg-on-primary/10 p-lg rounded-xl italic font-display text-body-lg border-l-4 border-secondary">
+                        "The goal of education is not the increase of knowledge, but the expansion of possibility."
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-tertiary-fixed-variant">
+<div class="w-full py-xl px-gutter max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-sm">Excellence</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevating academic standards through disciplined coaching and expert mentorship.</p>
+</div>
+<div>
+<h6 class="font-label-bold text-label-bold text-primary mb-md">Programs</h6>
+<ul class="space-y-sm">
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Foundation Year</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Advanced Science</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Commerce Elite</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Entrance Prep</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-bold text-label-bold text-primary mb-md">Resources</h6>
+<ul class="space-y-sm">
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Cookie Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-bold text-label-bold text-primary mb-md">Newsletter</h6>
+<p class="font-caption text-caption text-on-surface-variant mb-md">Get the latest educational insights delivered to your inbox.</p>
+<div class="flex gap-0">
+<input class="bg-surface-container-lowest border-outline-variant w-full rounded-l-lg focus:ring-primary focus:border-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-md rounded-r-lg hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Excellence Coaching Center. All rights reserved.</p>
+<div class="flex gap-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for Navbar on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('h-20');
+                nav.classList.add('h-16');
+            } else {
+                nav.classList.remove('py-2', 'shadow-md');
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16');
+            }
+        });
+
+        // Simple Fade-in Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
